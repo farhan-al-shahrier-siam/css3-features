@@ -6,7 +6,7 @@
     <title>CSS Variable</title>
     <style>
         :root{
-            --primary-color: yellowgreen;
+            --primary-color: blueviolet;
             --secondary-color: yellowgreen;
         }
         h1{
@@ -16,10 +16,24 @@
             background-color: var(--primary-color);
         }
         .box{
-            border: 5px solid var(--primary-color);
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 300px);
         }
         .box p{
             color: var(--primary-color);
+        }
+
+        .sidebar{
+            background-color: lightcoral;
+        }
+        .content{
+            background-color: lightseagreen;
+        }
+        .container{
+            height: 350px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 220px);
         }
     </style>
 </head>
@@ -29,6 +43,10 @@
     <div class="box">
         <h3>I'm doing somthing</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ab sunt! Cum facere necessitatibus aperiam libero, voluptate nulla harum vitae!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
     </div>
 </body>
 </html>
