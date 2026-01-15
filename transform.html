@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body{
+            margin-left: 50px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid slateblue;
+            background-color: red;
+        }
+        .inner-box{
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            /* transform: rotate(45deg); */
+            /* transform: scale(.25) translateX(100px); */
+        }
+        .inner-box:hover{
+            transform: rotate(45deg) translateX(50px) translateY(50px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploring Transform and Translate in CSS3</h1>
+    <div class="box">
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>
